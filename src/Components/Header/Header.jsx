@@ -5,17 +5,21 @@ const navLinks = [
     {
         name: 'Home',
         path: '/Shop-v1/home'
+        path: '/Shop-v1/home'
     },
     {
         name: 'Products',
+        path: '/Shop-v1/products'
         path: '/Shop-v1/products'
     },
     {
         name: 'About Us',
         path: '/Shop-v1/about-us'
+        path: '/Shop-v1/about-us'
     },
     {
         name: 'Contact Us',
+        path: '/Shop-v1/contact-us'
         path: '/Shop-v1/contact-us'
     }
 ]
@@ -23,6 +27,7 @@ const Header = () => {
     return (
         <nav className="bg-white border-gray-200 dark:bg-gray-900">
             <div className="container flex flex-wrap items-center justify-between mx-auto p-4">
+                <Link to={'/Shop-v1/home'} className="flex items-center">
                 <Link to={'/Shop-v1/home'} className="flex items-center">
                     <img src="https://flowbite.com/docs/images/logo.svg" className="h-8 mr-3" alt="Flowbite Logo" />
                     <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flow Cart</span>
