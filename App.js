@@ -13,11 +13,11 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route path='https://AmirShaikh09.github.io/Shop-v1/' element={<Home />} />
-        <Route path='https://AmirShaikh09.github.io/Shop-v1/products/:id' element={<Product />} />
-        <Route path='https://AmirShaikh09.github.io/Shop-v1/categories/:name' element={<CategoryProducts />} />
-        <Route path='https://AmirShaikh09.github.io/Shop-v1/products' element={ <Products/>}/>
-        <Route path='https://AmirShaikh09.github.io/Shop-v1/cart' element={ <Cart/>}/>
+        <Route exact path='/Shop-v1/home' element={<Home />} />
+        <Route path='/Shop-v1/products/:id' element={<Product />} />
+        <Route path='/Shop-v1/categories/:name' element={<CategoryProducts />} />
+        <Route path='/Shop-v1/products' element={ <Products/>}/>
+        <Route path='/Shop-v1/cart' element={ <Cart/>}/>
       </Routes>
       <Footer/>
     </div>
